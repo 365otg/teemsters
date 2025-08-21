@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO OPTIMIZATION -->
+    <title>The International Teemsterrs Union Wiki</title>
+    <meta name="description" content="The official hub for The International Teemsterrs Union, The Teem community, and founder Charles A. Paris (Brother OTG). Explore the mission to empower independent workers, and discover the music, media, and legacy of the Over Time Grind movement.">
+    <meta name="keywords" content="The International Teemsterrs Union, The Teem, Charles Paris Music, Brother OTG, Over Time Grind, Supply The Work, independent workers, freelance union, creative guild, gig economy, 1099 workers, music producer, software developer, community activist, Beanie Sigel, Bernard Hopkins, Taxstone">
+    
+    <link rel="canonical" href="https://teemsterrs.org/" />
+
+    <!-- Open Graph / Facebook / LinkedIn Tags -->
+    <meta property="og:title" content="The International Teemsterrs Union | Official Hub">
+    <meta property="og:description" content="The official site for The International Teemsterrs Union, The Teem community, and founder Charles A. Paris. A movement for the modern independent worker.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg">
+    <meta property="og:url" content="https://teemsterrs.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The International Teemsterrs Union | Official Site">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Teemsterrs">
+    <meta name="twitter:creator" content="@Teemsterrs">
+    <meta name="twitter:title" content="The International Teemsterrs Union | Founded by Charles Paris">
+    <meta name="twitter:description" content="Join the movement for independent workers. Explore the official hub for the Union, the Teem, and the work of Charles Paris (Brother OTG).">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg">
+
+    <!-- Favicon and App Icon for Mobile -->
+    <link rel="icon" href="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Teemsterrs Union">
+    <link rel="manifest" href="data:application/manifest+json,{
+        &quot;name&quot;: &quot;The International Teemsterrs Union&quot;,
+        &quot;short_name&quot;: &quot;Teemsterrs&quot;,
+        &quot;start_url&quot;: &quot;.&quot;,
+        &quot;display&quot;: &quot;standalone&quot;,
+        &quot;background_color&quot;: &quot;#ffffff&quot;,
+        &quot;theme_color&quot;: &quot;#f6f6f6&quot;,
+        &quot;icons&quot;: [
+            {
+                &quot;src&quot;: &quot;https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg&quot;,
+                &quot;sizes&quot;: &quot;192x192&quot;,
+                &quot;type&quot;: &quot;image/png&quot;
+            },
+            {
+                &quot;src&quot;: &quot;https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg&quot;,
+                &quot;sizes&quot;: &quot;512x512&quot;,
+                &quot;type&quot;: &quot;image/png&quot;
+            }
+        ]
+    }">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts for Wikipedia Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:wght@400;700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Wikipedia Styles */
+        body { background-color: #f6f6f6; color: #202122; font-family: 'Linux Libertine', 'Lora', serif; }
+        #main-content { background-color: #ffffff; border-left: 1px solid #a2a9b1; border-right: 1px solid #a2a9b1; border-bottom: 1px solid #a2a9b1; }
+        h1, h2, h3, h4, h5, h6, .sans-serif { font-family: 'Arimo', sans-serif; }
+        #main-content h1.page-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-bottom: 0.1em; font-weight: 400; }
+        #main-content h2.section-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-top: 1em; margin-bottom: 0.5em; font-weight: 400; }
+        .link-blue { color: #0645ad; }
+        a.link-blue:hover { text-decoration: underline; }
+        .infobox { background-color: #f8f9fa; border: 1px solid #a2a9b1; font-size: 0.88em; line-height: 1.5; }
+        .infobox th { text-align: left; padding-right: 1em; font-weight: bold; }
+        .infobox td { padding: 0.5em; }
+        .toc { background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 1em; display: table; margin-bottom: 1em; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc > ul > li { margin-bottom: 0.4em; }
+        .toc .toclevel-1 { font-weight: bold; }
+        #main-content p { margin-bottom: 1.5em; } 
+        .image-caption { font-size: 0.8rem; text-align: center; color: #54595d; padding: 0.25rem; }
+        #left-sidebar a.active { font-weight: bold; color: #000; }
+        .aspect-video { aspect-ratio: 16 / 9; }
+        .wikitable { border: 1px solid #a2a9b1; border-collapse: collapse; width: 100%; margin-top: 1em; }
+        .wikitable th, .wikitable td { border: 1px solid #a2a9b1; padding: 0.5rem; text-align: left; }
+        .wikitable th { background-color: #eaecf0; font-weight: bold; }
+        /* Mobile Menu Styles */
+        #mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu.is-open {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 pb-16 md:pb-0">
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm z-50 md:hidden overflow-y-auto">
+          <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4 mt-8">
+          <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+          <nav id="mobile-nav">
+              <!-- Mobile nav links will be cloned here by JS -->
+          </nav>
+    </div>
+
+    <div class="flex flex-col md:flex-row max-w-screen-2xl mx-auto bg-white shadow-lg">
+        <!-- Left Sidebar (Desktop) -->
+        <aside id="left-sidebar" class="hidden md:block w-full md:w-48 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="The International Teemsterrs Union" class="w-24 mx-auto mb-4">
+            <h2 class="font-bold mb-2 sans-serif">Navigation</h2>
+            <nav id="desktop-nav">
+                <ul>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline active" data-page="union">The Teemsterrs Union</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="teem">The Teem (Community)</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="founder">About the Founder</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contributors">Contributor Wall</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="directory">Business Directory</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="contact">Links & Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col min-w-0">
+            <!-- Top Bar -->
+            <header class="flex justify-between items-center p-4 border-b border-gray-300 bg-[#f8f9fa] sans-serif text-sm">
+                <div class="flex items-center">
+                    <button id="mobile-menu-button-header" class="md:hidden mr-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                    <div>
+                        <a href="#" class="link-blue hover:underline">Article</a>
+                        <a href="#" class="ml-4 text-gray-500">Talk</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <input type="search" placeholder="Search Site" class="border border-gray-400 rounded-l px-2 py-1 text-sm w-24 md:w-auto">
+                    <button class="bg-gray-200 border border-gray-400 border-l-0 rounded-r px-3 py-1 text-sm">Search</button>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main id="main-content" class="p-4 md:p-8 flex-1 overflow-y-auto">
+                <!-- JavaScript will populate this area -->
+            </main>
+
+            <!-- Footer -->
+            <footer class="p-4 border-t border-gray-300 text-xs text-gray-600 bg-[#f8f9fa]">
+                <p>This page was last edited on 21 August 2025, at 01:25 (EDT).</p>
+                <p>Text is available under the <a href="#" class="link-blue hover:underline">Creative Commons Attribution-ShareAlike License 4.0</a>; additional terms may apply. By using this site, you agree to the <a href="#" class="link-blue hover:underline">Terms of Use</a> and <a href="#" class="link-blue hover:underline">Privacy Policy</a>.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Menu Button -->
+    <button id="mobile-menu-button-float" class="md:hidden fixed bottom-4 right-4 bg-white border border-gray-400 rounded-full p-3 shadow-lg z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+
+    <script>
+        // --- CONTENT FOR EACH PAGE ---
+        const pageContent = {
+            union: {
+                title: "The International Teemsterrs Union",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">A New Guild for the Modern Independent Worker</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" alt="The Teemsterrs Committee Logo" class="mx-auto"><div class="text-xs p-1">Official Emblem</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded</th><td class="p-2">August 20, 2025</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founder</th><td class="p-2">Charles Paris</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founding Chapter</th><td class="p-2">Local #1, Philadelphia</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Roots</th><td class="p-2">Over Time Grind (est. 2011)</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Sectors</th><td class="p-2">Creative, Digital, Automotive, Skilled Trades, Gig Economy</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://www.teemsterrs.org" class="link-blue" target="_blank" rel="noopener noreferrer">teemsterrs.org</a></td></tr>
+                                </tbody>
+                            </table>
+                             <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
+                                <p class="font-bold">Join the Movement</p>
+                                <p class="text-sm my-2">Get your free Founding Member Kit and become an official part of Local #1.</p>
+                                <a href="https://brotherotg.gumroad.com/l/teemsterrs" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Join Now &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p><b>The International Teemsterrs Union</b> is an <a href="https://en.wikipedia.org/wiki/United_States" class="link-blue">American</a> <a href="https://en.wikipedia.org/wiki/Advocacy_group" class="link-blue">professional guild</a> and developing <a href="https://en.wikipedia.org/wiki/Trade_union" class="link-blue">labor union</a> founded by creative <a href="https://en.wikipedia.org/wiki/Entrepreneurship" class="link-blue">entrepreneur</a> Charles Paris. It is the culmination of a 20-year journey through the heart of American labor—from union halls and highway paving crews to the recording studio and the digital frontier. It was created for the new wave of multi-skilled, independent <a href="https://en.wikipedia.org/wiki/Worker" class="link-blue">workers</a> who are the backbone of the modern <a href="https://en.wikipedia.org/wiki/Economy" class="link-blue">economy</a>.</p>
+                            <div id="toc" class="toc my-4 sans-serif mt-6">
+                                <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
+                                <ul>
+                                    <li class="toclevel-1"><a href="#origins"><span>1</span> Origins: Local #1 & Over Time Grind</a></li>
+                                    <li class="toclevel-1"><a href="#mission"><span>2</span> The Vision for the Modern Worker</a></li>
+                                    <li class="toclevel-1"><a href="#membership"><span>3</span> Who We Represent</a></li>
+                                    <li class="toclevel-1"><a href="#philosophy"><span>4</span> Our Philosophy: "Over Time Grind"</a></li>
+                                </ul>
+                            </div>
+                            <h2 id="origins" class="section-title">Origins: Local #1 & Over Time Grind</h2>
+                            <p class="my-6">The foundation of The International Teemsterrs Union is built on real-world experience. Founder Charles Paris began his career with a <a href="https://en.wikipedia.org/wiki/Blue-collar_worker" class="link-blue">blue-collar</a> background, working as a union member in IUPAT Local #47 and Laborers Union Local #741. He learned the value of camaraderie and collective action firsthand.</p>
+                            <p>When the <a href="https://en.wikipedia.org/wiki/Great_Recession" class="link-blue">recession</a> hit, Paris lost his job and fell back on his second career: music. Self-taught and resilient, he began recording artists, building websites, and handling his own <a href="https://en.wikipedia.org/wiki/Promotion_(marketing)" class="link-blue">promotion</a> and <a href="https://en.wikipedia.org/wiki/Advertising" class="link-blue">advertising</a>. This necessity gave birth to a philosophy, and in 2011, a <a href="https://en.wikipedia.org/wiki/Company" class="link-blue">company</a>: <b>Over Time Grind Productions, LLC</b>. The name reflected the reality of the independent hustle: long nights, double shifts, and wearing all the hats yourself. The union was established with the founding of <b>Local #1</b> in <a href="https://en.wikipedia.org/wiki/Philadelphia" class="link-blue">Philadelphia</a>, the first chapter of this new movement.</p>
+                            <h2 id="mission" class="section-title">The Vision for the Modern Worker</h2>
+                            <p class="my-6">We know you're tired of being broke, hurt, and doing it all by yourself. The core mission of The International Teemsterrs Union is to provide a unified voice, a central hub, and collective power for the millions of <a href="https://en.wikipedia.org/wiki/1099_employee" class="link-blue">1099 entrepreneurs</a> and independent workers. This is not yet a formal union; it is the vision and the groundwork. It is the <a href="https://en.wikipedia.org/wiki/Community" class="link-blue">community</a> and the <a href="https://en.wikipedia.org/wiki/Resource" class="link-blue">resource hub</a> being built to give us all the strength to become one. We are here to ensure people get paid properly and are not taken advantage of just because they don't know the system.</p>
+                             <div class="bg-gray-100 border p-4 my-4 text-center">
+                                <h3 class="font-bold text-lg sans-serif">Become a Founding Member of Local #1</h3>
+                                <p class="text-sm my-2">Whether you're a fan, a worker, or a supporter of the movement, you have a place here. Get your free digital member kit, join the community, and get access to exclusive updates and content.</p>
+                                <a href="https://brotherotg.gumroad.com/l/teemsterrs" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click Here to Get Your Free Member Kit &rarr;</a>
+                            </div>
+                            <h2 id="membership" class="section-title">Who We Represent</h2>
+                            <p>Membership is based on a portfolio of skills. If you are a creator, technician, entrepreneur, or artist working independently, you have a home here. Our vision includes:</p>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li><b>Content Creators:</b> <a href="https://en.wikipedia.org/wiki/Podcasting" class="link-blue">Podcasters</a>, <a href="https://en.wikipedia.org/wiki/Influencer_marketing" class="link-blue">Influencers</a>, <a href="https://en.wikipedia.org/wiki/YouTuber" class="link-blue">YouTubers</a>, <a href="https://en.wikipedia.org/wiki/Self-publishing" class="link-blue">Self-Publishing Authors</a>.</li>
+                                <li><b>Music & Audio:</b> <a href="https://en.wikipedia.org/wiki/Musician" class="link-blue">Musicians</a>, <a href="https://en.wikipedia.org/wiki/Audio_engineer" class="link-blue">Sound Engineers</a>, <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">Producers</a>, <a href="https://en.wikipedia.org/wiki/DJ" class="link-blue">DJs</a>, Audio Technicians.</li>
+                                <li><b>Visual & Digital Arts:</b> <a href="https://en.wikipedia.org/wiki/Videography" class="link-blue">Videographers</a>, <a href="https://en.wikipedia.org/wiki/Photographer" class="link-blue">Photographers</a>, <a href="https://en.wikipedia.org/wiki/Graphic_designer" class="link-blue">Graphic Designers</a>, <a href="https://en.wikipedia.org/wiki/Web_developer" class="link-blue">Web Developers</a>.</li>
+                                <li><b>Automotive & Sales:</b> Car Salespeople, Sales Managers, <a href="https://en.wikipedia.org/wiki/Automobile_repair_shop" class="link-blue">Auto Shop</a> Entrepreneurs, Installers.</li>
+                                <li><b>Skilled Labor:</b> <a href="https://en.wikipedia.org/wiki/Maintenance_(technical)" class="link-blue">General Maintenance</a>, <a href="https://en.wikipedia.org/wiki/Event_management" class="link-blue">Event Setup</a> and <a href="https://en.wikipedia.org/wiki/Logistics" class="link-blue">Logistics</a>.</li>
+                            </ul>
+                            <h2 id="philosophy" class="section-title">Our Philosophy: "Over Time Grind"</h2>
+                            <p>"Over Time Grind" is the work it takes to be successful. It's the long nights, the double shifts. It's being the secretary, the trashman, and the rocket scientist all in one day. The International Teemsterrs Union is built on this ethos. We want our members to feel that sense of camaraderie found on a job site or in a real team. We want you to feel like you are a part of something, because you are. We want you to know that OTG has your back.</p>
+                            <p class="font-bold">We are the union for everyone who has had to do it all by themselves. Now, we do it together.</p>
+                        </div>
+                    </div>
+                `
+            },
+            teem: {
+                title: "The Teem (Community & Fans)",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">The Community. The Fans. The Foundation.</p>
+                     <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The Teemsterrs Union</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/Teemsterrswork.jpg" alt="Logo for The Teem Community" class="mx-auto"><div class="text-xs p-1">The Teemsterrs: Established 2025</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded By</th><td class="p-2">Charles Paris</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Socials</th><td class="p-2"><a href="http://x.com/Teemsterrs" class="link-blue">Twitter</a>, <a href="http://instagram.com/Teemsterrs" class="link-blue">Instagram</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                             <h2 class="section-title">History of The Teem</h2>
+                            <p>The Teem is more than a fanbase; it's a family built over years of shared experiences. It began with fans of different brands—<b>Charles Paris Music</b>, <b>The Rich Rising Movement</b>, the <b>365 Brand</b>—and grew in the <b>OTG Safe Spaces</b> of Clubhouse. It includes people I sold cars to, content fans, and supporters of the <b>Supply The Work</b> philosophy. Everyone who dedicated their time, shared their stories, and offered their support created the vision for The Teemsterrs.</p>
+                            <h2 class="section-title">Join the Movement</h2>
+                            <p>Whether you're a fan of the music, a worker in the gig economy, or someone who believes in the Over Time Grind philosophy, you are part of The Teem. The best way to get involved is to join our mailing list and receive the official Founding Member Kit. It's free, and it's your first step into a larger community. All members receive exclusive updates and member-only content.</p>
+                            <p><a href="https://brotherotg.gumroad.com/l/teemsterrs" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Click here to get your free Founding Member Kit.</a></p>
+                            <h2 class="section-title">Music & Media</h2>
+                            <p><b>Latest Album:</b></p>
+                            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1781558929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://charlesparismusic.bandcamp.com/album/charles-paris-music">Charles Paris Music by Charles Paris Music</a></iframe>
+                            <p class="mt-4">For all music, media, and entertainment, visit the official <a href="http://charlesparismusic.com" class="link-blue" target="_blank" rel="noopener noreferrer"><b>CharlesParisMusic.com</b></a> hub.</p>
+                            <h2 class="section-title">Community Spotlight: The Audiobook</h2>
+                            <p>From our community space "Conspiracy Theories Real Or Fake with the Facts," here is the official audiobook, AI-read and produced by Charles Paris.</p>
+                            <div class="aspect-video my-4">
+                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/srzPTZulDTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            founder: {
+                title: "Charles A. Paris (Brother OTG)",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">Charles A. Paris</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris, the music producer and developer known as Brother OTG" class="mx-auto"><div class="text-xs p-1">Charles A. Paris</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Born</th><td id="born-cell" class="p-2">Charles Anthony Paris<br>April 30, 1980<br>Urbana, Illinois, U.S.</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Nationality</th><td class="p-2">Black American</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Other names</th><td class="p-2">Brother OTG, 365OTG, Charles Paris Music, O.T.G, I Double L, Supply The Work</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Occupation</th><td class="p-2">Record producer, composer, software developer, author, brand consultant, community activist</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Title</th><td class="p-2">CEO & Founder, Over Time Grind Productions LLC</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Years active</th><td class="p-2">1998–present</td></tr>
+                                </tbody>
+                            </table>
+                             <div class="bg-gray-100 border-t-4 border-gray-400 rounded-b text-gray-900 px-4 py-3 shadow-md mt-4 text-center" role="alert">
+                                <p class="font-bold">Join the Movement</p>
+                                <p class="text-sm my-2">Become a Founding Member of The International Teemsterrs Union, Local #1.</p>
+                                <a href="https://brotherotg.gumroad.com/l/teemsterrs" class="font-bold link-blue" target="_blank" rel="noopener noreferrer">Get Your Free Kit &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p><a href="https://www.ascap.com/repertory#/ace/writer/600701211/PARIS%20CHARLES%20ANTHONY" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Charles Anthony Paris</b></a> (born April 30, 1980), known professionally as <b>Brother OTG</b>, is an American <a href="https://en.wikipedia.org/wiki/Record_producer" class="link-blue">record producer</a>, software developer, and author. He is the founder of <a href="https://365otg.github.io/CharlesParisMusic/" class="link-blue" target="_blank" rel="noopener noreferrer">CHARLES PARIS MUSIC</a> and developed the <b>Over Time Grind</b> business philosophy. His work includes production for <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, the theme song for the BET series "<a href="https://en.wikipedia.org/wiki/Tiny_and_Toya" class="link-blue" target="_blank" rel="noopener noreferrer">Tiny and Toya 2</a>," and tracks that have accumulated over 6.3 million plays on TikTok. Paris was formerly a voting member of the <a href="https://en.wikipedia.org/wiki/Grammy_Awards" class="link-blue">Grammy Awards</a> and develops web applications for music creators.</p>
+                            <h2 class="section-title">Career Journey</h2>
+                            <p>Born in <a href="https://en.wikipedia.org/wiki/Urbana,_Illinois" class="link-blue" target="_blank" rel="noopener noreferrer">Urbana, Illinois</a>, Paris began his career from 2002 to 2009 under the name "I Double L," founding the <a href="https://www.ascap.com/repertory#/ace/works/publisher/2685089/MIDWEST%20ILL%20MUZIK%20GROUP" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Midwest Muzik Group</b></a>. After winning local music contests, he signed a contract that did not advance his career. Following advice from <a href="https://en.wikipedia.org/wiki/Black_Hand_Entertainment" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Chaz Williams</b></a> of Black Hand Entertainment, Paris secured a publishing deal in 2009 with <a href="https://en.wikipedia.org/wiki/MC_Lyte" class="link-blue" target="_blank" rel="noopener noreferrer"><b>MC Lyte's</b></a> <a href="https://dubosemusic.com/" class="link-blue" target="_blank" rel="noopener noreferrer"><b>DuBose Music Group</b></a>. Between 2009 and 2011, he developed a business plan and created music in preparation for a move to Philadelphia.</p>
+                            <p>In 2011, Paris relocated to South Philadelphia and established <b>Over Time Grind Productions, LLC</b>. He worked as an engineer at Jazz U Up Studio and handled promotions for Glenn Lewis's single "Can't Say Love" with <a href="https://en.wikipedia.org/wiki/Ruffhouse_Records" class="link-blue" target="_blank" rel="noopener noreferrer">Ruffhouse Records</a>. From 2012 to 2016, he was the Social Media Manager and A&R for Phillybassd Records, where he mentored students from local universities. During this time, he was mentored by songwriter <a href="https://www.soulexpress.net/brucehawes.htm" class="link-blue" target="_blank" rel="noopener noreferrer"><b>Bruce Hawes</b></a>, known for writing <a href="https://en.wikipedia.org/wiki/The_Spinners_(American_band)" class="link-blue" target="_blank" rel="noopener noreferrer">The Spinners'</a> song "<a href="https://en.wikipedia.org/wiki/Sadie_(song)" class="link-blue" target="_blank" rel="noopener noreferrer">Sadie</a>," which was later sampled in <a href="https://en.wikipedia.org/wiki/2Pac" class="link-blue" target="_blank" rel="noopener noreferrer">2Pac's</a> track "<a href="https://en.wikipedia.org/wiki/Dear_Mama" class="link-blue" target="_blank" rel="noopener noreferrer">Dear Mama</a>."</p>
+                            <h2 class="section-title">The Beanie Sigel Era & Podcasting Influence</h2>
+                            <p>From 2015 to 2020, Paris worked with recording artist <a href="https://en.wikipedia.org/wiki/Beanie_Sigel" class="link-blue">Beanie Sigel</a>, managing his transition into digital media. Paris's role involved sourcing production and assisting with business matters, including the patent for <a href="https://en.wikipedia.org/wiki/State_Property_(group)" class="link-blue" target="_blank" rel="noopener noreferrer">State Property</a>, which preceded a group reunion. He produced Sigel's interviews on the Taxstone podcast, which have been credited with increasing the popularity of urban podcasting.</p>
+                            <h2 class="section-title">The OTG Ecosystem: Connecting the Brands</h2>
+                            <p>The International Teemsterrs Union is the culmination of several brands and philosophies developed by Paris throughout his career. <b>Over Time Grind Productions, LLC</b> is the foundational company and the engine for all business. Brands like <b>Supply The Work</b> and <b>Rich Rising</b> are core philosophies that represent the ethos of the movement. <b>Charles Paris Music</b> is the banner for his personal creative output. All of these streams now flow into one central mission: empowering independent workers through The International Teemsterrs Union.</p>
+                            <h2 class="section-title">Founding The International Teemsterrs Union</h2>
+                            <p>Drawing from two decades of experience as both a union laborer and an independent entrepreneur, Paris founded The International Teemsterrs Union. The "Over Time Grind" philosophy, born from the necessity of wearing every hat to survive and succeed, became the cornerstone of the union's mission: to provide the resources, advocacy, and camaraderie that he knew were missing for the modern multi-skilled worker.</p>
+                        </div>
+                    </div>
+                `
+            },
+            contributors: {
+                title: "Founding Contributors Wall",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>This page honors and recognizes the founding contributors who have generously supported the mission of The International Teemsterrs Union. Their belief in this movement helps us build resources, advocate for independent workers, and grow Local #1.</p>
+                    <p>To have your name and link added to the wall, <a href="https://brotherotg.gumroad.com/l/teemsterrs" class="link-blue" target="_blank" rel="noopener noreferrer"><b>please make a contribution here</b></a>. Thank you for your support.</p>
+                    
+                    <h2 class="section-title">Executive Council ($100+)</h2>
+                    <p>Contributors at this level receive a permanent spot on the wall with their name, a link to their website or social media, and a short description of their business or craft.</p>
+                    <table class="wikitable">
+                        <thead>
+                            <tr>
+                                <th>Contributor Name</th>
+                                <th>Link</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td><a href="#" class="link-blue">@JaneDoeCreates</a></td>
+                                <td>Independent Graphic Designer & Illustrator</td>
+                            </tr>
+                            <!-- Add more Executive Council contributors here -->
+                        </tbody>
+                    </table>
+
+                    <h2 class="section-title">Advocates ($25 - $99)</h2>
+                    <p>Contributors at this level receive a spot on the wall with their name and a link to their website or social media.</p>
+                    <table class="wikitable">
+                        <thead>
+                            <tr>
+                                <th>Contributor Name</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Smith</td>
+                                <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
+                            </tr>
+                            <!-- Add more Advocates here -->
+                        </tbody>
+                    </table>
+
+                    <h2 class="section-title">Founding Members & Supporters (Up to $24)</h2>
+                    <p>Every person who joins the movement by downloading the free member kit or making a contribution will have their name listed here. Supporters who contribute $5 or more will have a star (★) next to their name.</p>
+                     <table class="wikitable">
+                        <thead>
+                            <tr>
+                                <th>Member Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Maria Garcia ★</td></tr>
+                            <tr><td>David Chen</td></tr>
+                            <!-- Add more Founding Members here -->
+                        </tbody>
+                    </table>
+                `
+            },
+             directory: {
+                title: "Teemsterrs Business Directory",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>This is the official business directory for members of The International Teemsterrs Union. This is a network built to encourage members to hire and support each other. All contributors at the Advocate level ($25+) are eligible for a listing.</p>
+                    <h2 class="section-title">Directory</h2>
+                    <table class="wikitable">
+                        <thead>
+                            <tr>
+                                <th>Business / Service</th>
+                                <th>Contact / Website</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Doe Graphics</td>
+                                <td><a href="#" class="link-blue">@JaneDoeCreates</a></td>
+                                <td>Independent Graphic Designer & Illustrator</td>
+                            </tr>
+                             <tr>
+                                <td>John Smith Music</td>
+                                <td><a href="#" class="link-blue">JohnSmithMusic.com</a></td>
+                                <td>Composer for Film & Video Games</td>
+                            </tr>
+                            <!-- Add more directory listings here -->
+                        </tbody>
+                    </table>
+                `
+            },
+            contact: {
+                title: "Links & Contact",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>This section contains a comprehensive list of official external links related to Charles A. Paris, The Teemsterrs Union, and all associated brands.</p>
+                    <h2 class="section-title">Official Union & Community Hubs</h2>
+                     <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://share.google/kcJTScrUgEbQKJKIp" target="_blank" rel="noopener noreferrer" class="link-blue">Google My Business (Digital Union Hall)</a></li>
+                        <li><a href="https://brotherotg.gumroad.com/l/teemsterrs" target="_blank" rel="noopener noreferrer" class="link-blue">Join The Union (Free Founding Member Kit)</a></li>
+                    </ul>
+                    <h2 class="section-title">Contribute to the Movement</h2>
+                    <p>Help build the future for independent workers. All contributors are honored on our <a href="#" data-page="contributors" class="link-blue"><b>Founding Contributors Wall</b></a>.</p>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="https://brotherotg.gumroad.com/l/teemsterrs" target="_blank" rel="noopener noreferrer" class="link-blue">Contribute via Gumroad (Pay What You Want)</a></li>
+                    </ul>
+                    <h2 class="section-title">Social Media & Primary Platforms</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><a href="http://linktr.ee/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">All My Links (Linktree)</a></li>
+                        <li><a href="http://instagram.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Instagram (@365charlesparis)</a></li>
+                        <li><a href="http://x.com/365charlesparis" target="_blank" rel="noopener noreferrer" class="link-blue">Twitter/X (@365charlesparis)</a></li>
+                        <li><a href="http://tiktok.com/@365otg" target="_blank" rel="noopener noreferrer" class="link-blue">TikTok (@365otg)</a></li>
+                    </ul>
+                `
+            }
+        };
+
+        // --- NAVIGATION & PAGE LOGIC ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.getElementById('main-content');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButtonHeader = document.getElementById('mobile-menu-button-header');
+            const mobileMenuButtonFloat = document.getElementById('mobile-menu-button-float');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileNavContainer = document.getElementById('mobile-nav');
+            const desktopNavContainer = document.getElementById('desktop-nav');
+
+            mobileNavContainer.innerHTML = desktopNavContainer.innerHTML;
+            
+            function calculateAge() {
+                const bornCell = document.getElementById('born-cell');
+                if (bornCell) {
+                    const birthDate = new Date('1980-04-30');
+                    const ageDifMs = Date.now() - birthDate.getTime();
+                    const ageDate = new Date(ageDifMs);
+                    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                    bornCell.innerHTML = `Charles Anthony Paris<br>April 30, 1980 (age ${age})<br>Urbana, Illinois, U.S.`;
+                }
+            }
+
+            function showPage(pageId) {
+                if (!pageContent[pageId]) {
+                    console.error('Page not found:', pageId);
+                    return;
+                }
+                
+                const content = pageContent[pageId];
+                mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${content.html}`;
+
+                const allNavLinks = document.querySelectorAll('nav a[data-page]');
+                allNavLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.page === pageId);
+                });
+                
+                if (pageId === 'founder') { calculateAge(); }
+                
+                mainContent.scrollTop = 0; 
+            }
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('is-open');
+            }
+
+            mobileMenuButtonHeader.addEventListener('click', toggleMenu);
+            mobileMenuButtonFloat.addEventListener('click', toggleMenu);
+            closeMenuButton.addEventListener('click', toggleMenu);
+
+            // Use event delegation for nav links
+            document.body.addEventListener('click', function(e) {
+                const link = e.target.closest('a[data-page]');
+                if (link) {
+                    e.preventDefault();
+                    const pageId = link.dataset.page;
+                    showPage(pageId);
+                    if (mobileMenu.classList.contains('is-open')) {
+                        toggleMenu();
+                    }
+                }
+            });
+
+            showPage('union');
+        });
+    </script>
+</body>
+</html>
